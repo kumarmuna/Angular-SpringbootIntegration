@@ -1,0 +1,25 @@
+Steps to Follow
+========================
+1 -  Create a file proxy.conf.json under project angular4-client folder with content:
+
+{
+"/api":{
+"target": "http://localhost:8080",
+"secure": false
+}
+}
+
+2 - Edit package.json file for start script:
+	
+"start": "ng serve --proxy-config proxy.conf.json",
+
+3 - Build and run Spring Boot application with below commands	
+mvn clean install
+mvn spring-boot:run
+
+4 - Build and Run Angular4-client with below commands
+	
+ng build
+npm start 
+
+Type the URL http://localhost:4200 into your browser and you are all set.
