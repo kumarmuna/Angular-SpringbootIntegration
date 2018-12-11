@@ -1,0 +1,6 @@
+step1 - clone the project
+step2 - open command prompt and navigate to angular project(loginAng)
+step3 - run npm install 
+step4 - now run "ng serve --proxy-config proxy.conf.json", 
+	it will run localy in your system.
+step5 - localhot:4200 and enjoy
